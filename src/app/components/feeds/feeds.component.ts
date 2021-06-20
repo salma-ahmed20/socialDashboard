@@ -146,6 +146,8 @@ export class FeedsComponent implements OnInit {
     let localStoragefeeds: any = localStorage.getItem('feeds');
     if (localStoragefeeds !== null) {
       this.feeds = JSON.parse(localStoragefeeds);
+    this.filteredP = this.feeds;
+
     }
   }
 }
