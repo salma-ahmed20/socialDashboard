@@ -1,0 +1,50 @@
+<div class="wrapper">
+  <h1 class="title">Menu</h1>
+
+  <ul class="nav flex-column">
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="#">
+        <i class="fa fa-home"></i>Home</a
+      >
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#"><i class="fa fa-commenting"></i>Messages</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#"><i class="fa fa-user"></i>Profile</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#"><i class="fa fa-bookmark"></i>Saved Posts</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#"><i class="fa fa-cog"></i>Settings</a>
+    </li>
+  </ul>
+  <div class="" style="height: 100px">
+    <div
+      class="d-flex justify-content-between title"
+      (click)="isCollapsed = !isCollapsed"
+    >
+      <div class="mt-5 mb-3">Account</div>
+      <div class="mt-5">
+        <i *ngIf="isCollapsed" class="fa fa-angle-down"></i>
+        <i *ngIf="!isCollapsed" class="fa fa-angle-up"></i>
+      </div>
+    </div>
+    <div class="" *ngIf="isCollapsed">
+      <div class="d-flex justify-content-start">
+        <div class="">
+          <img class="img" src="../../../../assets/img/christian.jpg" />
+        </div>
+        <div class="name-group">
+          <div class="name">Salma</div>
+          <div class="short-name">@salmaaa</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <img class="ad" src="../../../assets/img/ads.PNG" />
+  </div>
+</div>

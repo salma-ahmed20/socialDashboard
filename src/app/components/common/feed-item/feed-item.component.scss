@@ -1,0 +1,33 @@
+.feedImg {
+  border-radius: 8%;
+  border: 3px solid white;
+  width: 340px;
+  box-shadow: -5px 15px 30px -5px rgba(0, 0, 0, 0.034);
+}
+.img {
+  border-radius: 50%;
+  width: 100%;
+  max-width: 35px;
+  border: 2px solid white;
+}
+.img:hover {
+  background-color: yellow;
+}
+.fa {
+  margin-right: 12px;
+  font-size: 25px;
+  color: #a4b6e2;
+}
+.heart {
+  color: #ff5775;
+}
+.text {
+  color: #415280;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+}
+.text-color {
+  color: #a4b6e2;
+  font-size: 17px;
+}

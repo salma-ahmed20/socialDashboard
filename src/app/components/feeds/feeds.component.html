@@ -1,0 +1,23 @@
+<div class="" style="margin-left: 15px">
+  <!-- <div class="row">
+        <div class="col-6">Feeds</div>
+        <div class="col">All</div>
+        <div class="col">Following</div>
+        <div class="col">Newest</div>
+        <div class="col">Popular</div>
+    </div> -->
+  <div class="d-flex header">
+    <div class="p-2 feed">Feeds</div>
+    <div class="p-2 text-color active">All</div>
+    <div class="p-2 text-color">Following</div>
+    <div class="p-2 text-color">Newest</div>
+    <div class="p-2 text-color">Popular</div>
+  </div>
+  <div class="mt-2 d-flex flex-wrap justify-content-around">
+    <app-feed-item
+      *ngFor="let feed of feeds"
+      [feed]="feed"
+      (feedChange)="feedChangeItem(feed)"
+    ></app-feed-item>
+  </div>
+</div>

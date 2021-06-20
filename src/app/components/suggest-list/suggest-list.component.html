@@ -1,0 +1,19 @@
+<div>
+  <div class="d-flex justify-content-around flex-wrap">
+    <app-search-bar></app-search-bar>
+    <div class="icon"><i class="fa fa-bell"></i></div>
+    <div class="bg-info icon">
+      <i class="fa fa-cloud-upload text-white"></i>
+    </div>
+  </div>
+  <div class="mt-4">
+    <div class="d-flex justify-content-between header">
+      <div class="p-2 left mb-3">Suggestions For You</div>
+      <div class="p-2 right">See All</div>
+    </div>
+    <app-suggest-item
+      *ngFor="let user of users"
+      [user]="user"
+    ></app-suggest-item>
+  </div>
+</div>

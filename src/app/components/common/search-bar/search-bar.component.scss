@@ -1,0 +1,35 @@
+$primary-color: #a4b6e240;
+
+.serach_field-area {
+  width: 145px;
+  position: relative;
+
+  .search_inner {
+    input {
+      color: $primary-color;
+      height: 55px;
+      width: 100%;
+      font-family: sans-serif;
+      font-weight: bold;
+      font-size: 14px;
+      padding-left: 60px;
+      border: 2px solid $primary-color;
+      background: transparent;
+      border-radius: 30px;
+    }
+  }
+
+  button {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: transparent;
+    border: 0;
+    padding-left: 25px;
+  }
+  .fa {
+    color: $primary-color;
+    font-size: 20px;
+  }
+}

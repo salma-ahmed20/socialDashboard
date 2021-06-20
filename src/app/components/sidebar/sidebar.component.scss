@@ -1,0 +1,51 @@
+.wrapper {
+  .nav-link {
+    color: #a4b6e2;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 16px;
+  }
+  .fa {
+    margin-right: 15px;
+    margin-left: 20px;
+    font-size: 20px;
+  }
+  .title {
+    padding-left: 38px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: #415280;
+    cursor: pointer;
+  }
+  .active {
+    box-shadow: -5px 15px 30px -5px rgba(0, 0, 0, 0.034);
+  }
+  .img {
+    border-radius: 50%;
+    width: 100%;
+    max-width: 35px;
+    margin-left: 38px;
+    border: 2px solid white;
+  }
+  .ad {
+    border: 2px solid white;
+    border-radius: 8%;
+    margin-left: 35px;
+    margin-top: 110px;
+    box-shadow: -5px 19px 9px -5px rgba(0, 0, 0, 0.034);
+  }
+  .name-group {
+    margin-left: 17px;
+  }
+  .name {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    color: #415280;
+  }
+  .short-name {
+    color: #a4b6e2;
+  }
+}

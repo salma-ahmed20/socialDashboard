@@ -1,0 +1,24 @@
+<div>
+  <div class="p-2">
+    <img class="feedImg" [src]="feed.img" />
+  </div>
+
+  <div class="d-flex flex-row">
+    <div class="p-2">
+      <img class="img" [src]="feed.pImg" />
+    </div>
+    <div class="p-2 m-2 text" style="flex-grow: 2">{{ feed.name }}</div>
+    <div class="p-2 m-2 text-color">
+      <i
+        class="fa fa-heart"
+        style="cursor: pointer"
+        [class.heart]="feed.likes > 0"
+        (click)="inc(feed)"
+      ></i
+      >{{ feed.likes }}
+    </div>
+    <div class="p-2 m-2 text-color">
+      <i class="fa fa-commenting"></i>{{ feed.comments }}
+    </div>
+  </div>
+</div>

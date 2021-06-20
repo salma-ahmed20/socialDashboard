@@ -1,0 +1,29 @@
+.d-flex {
+  .img {
+    border-radius: 50%;
+    width: 100%;
+    max-width: 45px;
+    border: 2px solid white;
+  }
+  .name {
+    color: #415280;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  .short-name {
+    color: #a4b6e2;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .btn-primary {
+    margin-left: auto;
+    background-color: #a975ff;
+    border-color: #a975ff;
+    width: 90px;
+  }
+  .follow {
+    background-color: white;
+    color: #415280;
+  }
+}
