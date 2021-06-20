@@ -8,14 +8,18 @@
     </div> -->
   <div class="d-flex header">
     <div class="p-2 feed">Feeds</div>
-    <div class="p-2 text-color active">All</div>
-    <div class="p-2 text-color">Following</div>
-    <div class="p-2 text-color">Newest</div>
-    <div class="p-2 text-color">Popular</div>
+    <div
+      class="p-2 text-color"
+      [class.active]="type.id === activeFilter"
+      *ngFor="let type of types"
+      (click)="filter(type)"
+    >
+      {{ type.name }}
+    </div>
   </div>
   <div class="mt-2 d-flex flex-wrap justify-content-around">
     <app-feed-item
-      *ngFor="let feed of feeds"
+      *ngFor="let feed of filteredP"
       [feed]="feed"
       (feedChange)="feedChangeItem(feed)"
     ></app-feed-item>
